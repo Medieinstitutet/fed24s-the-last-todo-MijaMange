@@ -1,6 +1,6 @@
 ﻿# Hiking Checklist - Todo App
 
-Detta är en React-baserad todo-applikation skapad som en skoluppgift. Syftet var att bygga en enkel men funktionell lista där man kan planera vad som ska med på en vandring.
+Detta är en React-baserad todo-applikation där syftet är att bygga en enkel men funktionell lista där man kan planera vad som ska med på en vandring.
 
 ## Funktioner
 
