@@ -163,7 +163,7 @@ button:hover {
   text-align: center;
   font-size: 0.85rem;
   color: #777;
-  font-style: italic;
+  font-style: bolder;
 }
 
 .print-btn {
@@ -171,11 +171,12 @@ button:hover {
   top: 20px;
   right: 20px;
   font-size: 0.8rem;
-  background: none;
+  background: #3e3422;
   border: 1px solid #aaa;
   padding: 6px 10px;
   border-radius: 6px;
   cursor: pointer;
+  color: white;
 }
 
 @media print {
@@ -229,7 +230,6 @@ input[type="checkbox"] {
   transition: accent-color 0.2s ease;
 }
 
-/* Hover = ljusgrön, checked = mörkgrön */
 .todo-checkbox:hover {
   accent-color: #a8d5b7;
 }

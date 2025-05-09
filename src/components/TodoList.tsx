@@ -11,7 +11,7 @@ interface Todo {
 interface Props {
   todos: Todo[];
   toggleTodo: (id: number) => void;
-  removeTodo: (id: number) => void; // 🔸 Lägg till detta
+  removeTodo: (id: number) => void; 
   droppableId: string;
 }
 
@@ -35,7 +35,7 @@ export const TodoList: React.FC<Props> = ({ todos, toggleTodo, removeTodo, dropp
                   <TodoItem
                     todo={todo}
                     toggleTodo={toggleTodo}
-                    removeTodo={removeTodo} // 🔸 Skicka vidare till TodoItem
+                    removeTodo={removeTodo} 
                   />
                 </div>
               )}
