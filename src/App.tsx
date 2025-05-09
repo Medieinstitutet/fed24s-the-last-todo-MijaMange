@@ -1,4 +1,3 @@
-// App.tsx
 import React, { useEffect, useState } from 'react';
 import { TodoList } from './components/TodoList';
 import { TodoForm } from './components/TodoForm';
@@ -93,10 +92,10 @@ function App() {
 
   return (
     <DragDropContext onDragEnd={handleDragEnd}>
-      <button className="print-btn" onClick={() => window.print()}>Export / Print</button>
+      <button className="print-btn" onClick={() => window.print()}>Export / Print Checklist</button>
 
       <div className="todo-wrapper">
-        <img src={logo} alt="Hiking Checklist logo" style={{ width: '120px', margin: '0 auto 10px', display: 'block' }} />
+        <img src={logo} alt="Hiking Checklist logo" style={{ width: '180px', margin: '0 auto 10px', display: 'block' }} />
         <h1>My Hiking Checklist</h1>
         <p className="intro-text">
           Plan your perfect hike by organizing all your essentials.
@@ -107,7 +106,7 @@ function App() {
         <TodoForm addTodo={addTodo} />
 
         <div className="sort">
-          <label>Sort: </label>
+          <label>Sort tasks: </label>
           <select value={sortOrder} onChange={(e) => setSortOrder(e.target.value as 'az' | 'za')}>
             <option value="az">A–Z</option>
             <option value="za">Z–A</option>
@@ -135,7 +134,7 @@ function App() {
 
        
         <footer className="footer">
-          <p>Made with ☕ & 🌲 by Mija</p>
+          <p>Made by Mija Hedborg Mellander for Medieinstitutet</p>
         </footer>
       </div>
     </DragDropContext>
